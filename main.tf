@@ -97,7 +97,7 @@ resource "aws_instance" "my_instance" {
   associate_public_ip_address = true
 
  
-  key_name = "Key.pem"   # Replace with your EC2 key pair name
+  key_name = "Key"   # Replace with your EC2 key pair name
 
   tags = {
     Name = "web-server-${count.index + 1}"
